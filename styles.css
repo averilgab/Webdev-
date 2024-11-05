@@ -1,4 +1,8 @@
 *
+body {
+  style= "margin: 50px; margin-bottom: 150px; background-position: center; background-attachment: fixed; background-size: cover;
+}
+
 h1 { 
   font-size: Bold 2.125rem;
     color: #5D6063;
