@@ -39,7 +39,7 @@ p {
 h2 {
   font-size: Bold 2.125rem;
   color: #ffffff;
-  background-color: #5f99b6; /* Soft blue background for headings */
+  background-color: #5f99b6; 
   padding: 12px 20px;
   border-radius: 6px;
   margin-bottom: 15px;
@@ -48,14 +48,14 @@ h2 {
 h2 + p {
   font-size: Bold 2.125rem;
   color: #333;
-  background-color: #f4f6f9; /* Light background for paragraphs */
+  background-color: #f4f6f9;
   padding: 15px;
   border-radius: 8px;
   line-height: 1.8;
   margin-bottom: 30px;
 }
 
-/* Media Query for responsive design */
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
