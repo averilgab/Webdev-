@@ -1,15 +1,28 @@
-*
- {
+/* Reset and general styling */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- }
+}
 
 body {
-   font-family: "Helvetica", "Arial", sans-serif;
-  background: linear-gradient(135deg, #f0f8ff, #e6e6e6); 
+  font-family: "Helvetica", "Arial", sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #e6e6e6); /* Light gradient background */
   color: #333;
   padding: 20px;
+}
+
+h1, h2 {
+  color: #2a3d54;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -17,17 +30,72 @@ header {
   margin-bottom: 40px;
 }
 
-h1 { 
-  font-size: Bold 2.125rem;
-    color: #5D6063;
-    background-color: #EAEDF0;
-    font-family: "Helvetica", "Arial", sans-serif;
-    align-items: center;
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2a3d54;
+  margin-bottom: 15px;
 }
 
 p {
- font-size: 1.125rem;
+  font-size: 1.125rem;
   color: #555;
   line-height: 1.6;
   margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #1e2a38; /* Darker shade for section titles */
+  background-color: #5f99b6; /* Soft blue background */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  color: #3a4a5f;
+  line-height: 1.5;
+  background-color: #f4f6f9; /* Soft background color for paragraphs */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for hymn section */
+.hymn p {
+  white-space: pre-line; /* Ensures line breaks appear as expected */
+  text-align: center;
+  font-size: 1.125rem;
+  color: #2a3d54;
+  background-color: #f0f8ff;
+  padding: 15px;
+  border-radius: 8px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
 }
