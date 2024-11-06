@@ -28,16 +28,8 @@ h1 {
   margin-bottom: 15px;
 }
 
-p {
-  font-size: 16PX;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: Bold 2.125rem;
+h1:not(:first-of-type) {
+  font-size: 2.125rem;
   color: #ffffff;
   background-color: #5f99b6; 
   padding: 12px 20px;
@@ -45,8 +37,16 @@ h2 {
   margin-bottom: 15px;
 }
 
-h2 + p {
-  font-size: Bold 2.125rem;
+p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h1 + p {
+  font-size: 16px;
   color: #333;
   background-color: #f4f6f9;
   padding: 15px;
@@ -55,13 +55,12 @@ h2 + p {
   margin-bottom: 30px;
 }
 
-
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
   }
 
-  p, h2 {
+  p, h1 + p {
     font-size: 1rem;
   }
 
